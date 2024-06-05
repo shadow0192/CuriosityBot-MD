@@ -1,6 +1,6 @@
 var handler = async (m, {conn}) => {
 
-if (!m.quoted) throw `*⚠️ RESPONDE AL MENSAJE QUE DESEE ELIMINAR*`
+if (!m.quoted) throw `[⚡]⌯ رد عــلــي الــرســالــه الـي انــت عــاوز تــحـذفــهــا`
 
 try {
 let key = {}
@@ -21,7 +21,7 @@ return conn.sendMessage(m.chat, {delete: m.quoted.vM.key})
 
 handler.help = ['delete']
 handler.tags = ['implementos']
-handler.command = /^del(ete)?$/i
+handler.command = /^(حذف)$/i
 handler.group = false
 handler.admin = true
 handler.botAdmin = true
